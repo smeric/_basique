@@ -1,0 +1,776 @@
+/**
+ * Ensemble des styles utilisés par le site
+ * 
+ * @package WordPress
+ * @subpackage _basique
+ **/
+
+/*! normalize.css v6.0.0 | MIT License | https://necolas.github.io/normalize.css/ */
+button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
+
+/*! normalize-opentype.css v0.2.4 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
+::-moz-selection{color:inherit;text-shadow:inherit;background-color:#ACCEF7}::selection{color:inherit;text-shadow:inherit;background-color:#ACCEF7}body,html,table{-webkit-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 0;-moz-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 0;font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 0}h1,h2,h3{-webkit-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 1;-moz-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 1;font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 1}abbr{text-transform:uppercase;-webkit-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"smcp" 1,"c2sc" 1;-moz-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"smcp" 1,"c2sc" 1;font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"smcp" 1,"c2sc" 1}time{-webkit-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0;-moz-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0;font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0}code,kbd,pre,samp{-webkit-font-feature-settings:"kern" 0,"liga" 0,"calt" 1,"dlig" 0,"pnum" 0,"tnum" 1,"onum" 0,"lnum" 1,"zero" 1;-moz-font-feature-settings:"kern" 0,"liga" 0,"calt" 1,"dlig" 0,"pnum" 0,"tnum" 1,"onum" 0,"lnum" 1,"zero" 1;font-feature-settings:"kern" 0,"liga" 0,"calt" 1,"dlig" 0,"pnum" 0,"tnum" 1,"onum" 0,"lnum" 1,"zero" 1}sup{-webkit-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 0,"sups" 1;-moz-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 0,"sups" 1;font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 0,"sups" 1}sub{-webkit-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 0,"subs" 1;-moz-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 0,"subs" 1;font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 0,"subs" 1}input[type=color],input[type=date],input[type=datetime],input[type=datetime-local],input[type=number],input[type=range],input[type=tel],input[type=week]{-webkit-font-feature-settings:"kern" 0,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 0,"lnum" 1,"zero" 0;-moz-font-feature-settings:"kern" 0,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 0,"lnum" 1,"zero" 0;font-feature-settings:"kern" 0,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 0,"lnum" 1,"zero" 0}caption,tbody{-webkit-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 0,"tnum" 1,"onum" 0,"lnum" 1,"zero" 1;-moz-font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 0,"tnum" 1,"onum" 0,"lnum" 1,"zero" 1;font-feature-settings:"kern" 1,"liga" 1,"calt" 1,"pnum" 0,"tnum" 1,"onum" 0,"lnum" 1,"zero" 1}
+
+/** =Debug
+ *************************************/
+/* CSS Background Grid Lines */
+.debug #site {
+	background-image: -webkit-linear-gradient(#666 1px, transparent 1px),
+		-webkit-linear-gradient(0, #666 1px, transparent 1px),
+		-webkit-linear-gradient(rgba(204,204,204,.5) 1px, transparent 1px),
+		-webkit-linear-gradient(0, rgba(204,204,204,.5) 1px, transparent 1px);
+	background-image: -moz-linear-gradient(#666 1px, transparent 1px),
+		-moz-linear-gradient(0, #666 1px, transparent 1px),
+		-moz-linear-gradient(rgba(204,204,204,.5) 1px, transparent 1px),
+		-moz-linear-gradient(0, rgba(204,204,204,.5) 1px, transparent 1px);
+	background-image: linear-gradient(#666 1px, transparent 1px),
+		linear-gradient(0, #666 1px, transparent 1px),
+		linear-gradient(rgba(204,204,204,.5) 1px, transparent 1px),
+		linear-gradient(0, rgba(204,204,204,.5) 1px, transparent 1px);
+	background-size: 80px 80px /* 16*5 */, 100px 100px /* 20*5 */, 16px 16px, 20px 20px;
+	background-size: 100px 100px /* 20*5 */, 100px 100px /* 20*5 */, 20px 20px, 20px 20px;
+	background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+	background-position: 50% -1px, 50% -1px, 50% -1px, 50% -1px;
+}
+.debug .wrapper {
+	outline: 1px dotted red;
+	}
+	.debug .container {
+		outline: 1px dotted blue;
+}
+
+
+/** =Utilitaires
+ *************************************/
+
+ /**
+ * Force l'assenceur de scroll vertical sur FF.
+ * Evite les sauts lors de la navigation entre des pages avec et sans barre de scroll
+ * dans les sites centrés horizontalement.
+ **/
+html {
+	overflow-y: scroll;
+}
+body {
+	height: 101%;
+}
+
+/**
+ * Base de calcul (10px) pour les tailles en unités relatives (rem).
+ * Empèche les plateformes mobile de modiifer les tailles du texte par défaut.
+ **/
+
+:root {
+	font-size: 10px;
+	-webkit-text-size-adjust: 100%;
+	   -moz-text-size-adjust: 100%;
+	    -ms-text-size-adjust: 100%;
+	        text-size-adjust: 100%;
+}
+
+.wrapper{
+	position: relative;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	}
+	.container {
+		overflow: hidden;
+	}
+	.container:after {
+		content: '';
+		display: table;
+		clear: both;
+}
+
+/* Navigation */
+nav ul {
+	padding: 0;
+	list-style: none;
+}
+
+/* Texte uniquement destiné aux logiciels lecteurs d'écran. */
+.screen-reader-text {
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+.screen-reader-text:focus {
+	clip: auto !important;
+	clip-path: auto !important;
+	display: block;
+	height: auto;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Couleurs de selection des éléments de la page */
+::-webkit-selection {
+	color: #fff;
+	background-color: #1a1a1a;
+	text-shadow: none;
+}
+   ::-moz-selection {
+	color: #fff;
+	background-color: #1a1a1a;
+	text-shadow: none;
+}
+        ::selection {
+	color: #fff;
+	background-color: #1a1a1a;
+	text-shadow: none;
+}
+
+
+/** =Styles par défaut
+ *************************************/
+
+body {
+	background-color: white;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #1a1a1a;
+	-webkit-font-smoothing: antialiased;
+	line-height: 16px;
+	line-height: 1.6rem;
+}
+
+p, ul, ol, dl, blockquote, pre, td, th, label, textarea, caption {
+	line-height: 16px;
+	line-height: 1.6rem;
+	margin: 16px 0;
+}
+h1 {
+	font-size: 28px;
+	font-size: 2.8rem;
+	line-height: 32px;
+	line-height: 3.2rem;
+	margin: 16px 0;
+}
+h2 {
+	font-size: 26px;
+	font-size: 2.6rem;
+	line-height: 32px;
+	line-height: 3.2rem;
+	margin: 16px 0;
+}
+h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 32px;
+	line-height: 3.2rem;
+	margin: 16px 0;
+}
+h4 {
+	font-size: 22px;
+	font-size: 2.2rem;
+	line-height: 32px;
+	line-height: 3.2rem;
+	margin: 16px 0;
+}
+h5 {
+	font-size: 20px;
+	font-size: 2rem;
+	line-height: 32px;
+	line-height: 3.2rem;
+	margin: 16px 0;
+}
+h6 {
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 32px;
+	line-height: 3.2rem;
+	margin: 16px 0;
+}
+
+em {
+	line-height: 1em;
+}
+
+/* avoid collapsing margins
+you might need this, depending on your design
+*/
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child,
+p:first-child, blockquote:first-child, pre:first-child, table:last-child,
+ul:first-child, ol:first-child, dl:first-child {
+	margin-top: 0;
+}
+
+/* avoid last-child bottom margin */
+p:last-child, blockquote:last-child, pre:last-child, table:last-child,
+ul:last-child, ol:last-child, dl:last-child {
+	margin-bottom: 0;
+}
+
+/* avoid supp margin on nested elements */
+/* li p, li ul{
+	margin-top: 0;
+	margin-bottom: 0;
+} */
+
+code, pre, samp {
+	white-space: pre-wrap;
+	font-family: consolas, 'DejaVu Sans Mono', courier, monospace;
+}
+
+code{
+	line-height: 16px;
+	line-height: 1.6rem;
+}
+
+table{
+	margin-bottom: 16px;
+	margin-bottom: 1.6rem;
+}
+
+acronym[title]{
+	border-bottom: 1px dotted;
+}
+
+/* Liens */
+
+a, a:link, a:active {
+	text-decoration: none;
+	color: #1a1a1a;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #1a1a1a;
+}
+
+a:focus, a:hover {
+	text-decoration: underline;
+	color: #1a1a1a;
+}
+
+a, a * {
+	cursor: pointer;
+}
+
+
+/** =Layout
+ *************************************/
+
+#site-wrapper {
+	}
+	#site {
+		width: 980px;
+		width: 98rem;
+		margin: 0 auto;
+		}
+		#content-wrapper,
+		#header-wrapper,
+		#footer-wrapper {
+			width: 980px;
+			width: 98rem;
+		}
+		#content-wrapper {
+			margin: 208px /* 16*12 + 16 */ 0 16px;
+			margin: 20.8rem /* 16*12 + 16 */ 0 1.6rem;
+		}
+		#header-wrapper {
+			position: absolute;
+			top: 0;
+			height: 192px; /* 16*12 */
+			height: 19.2rem; /* 16*12 */
+		}
+		#footer-wrapper {
+			height: 32px; /* 16*2 */
+			height: 3.2rem; /* 16*2 */
+			}
+			#content,
+			#header,
+			#footer {
+				padding: 0 20px;
+				padding: 0 2rem;
+			}
+			#content {}
+			#header,
+			#footer {
+				height: 100%;
+			}
+			#header {
+				overflow: visible;
+			}
+			#footer {
+				}
+				#main-wrapper,
+				#primary-sidebar-wrapper,
+				#secondary-sidebar-wrapper {
+					float: left;
+				}
+				#main-wrapper {
+				}
+				.full-width #main-wrapper {
+					float: none;
+					left: 0;
+					width: 100%;
+				}
+				.has-primary-sidebar #main-wrapper,
+				.has-secondary-sidebar #main-wrapper {
+					width: 700px;
+					width: 70rem;
+				}
+				.has-both-sidebars #main-wrapper {
+					width: 460px;
+					width: 46rem;
+				}
+				.has-both-sidebars #main-wrapper,
+				.has-primary-sidebar #main-wrapper {
+					left: 240px;
+					left: 24rem;
+				}
+				#primary-sidebar-wrapper,
+				#secondary-sidebar-wrapper {
+					width: 240px;
+					width: 24rem;
+				}
+				#primary-sidebar-wrapper {
+					left: -700px;
+					left: -70rem;
+				}
+				.has-both-sidebars #primary-sidebar-wrapper {
+					left: -460px;
+					left: -46rem;
+				}
+				#secondary-sidebar-wrapper {
+					}
+					#main {}
+					#primary-sidebar {
+						margin-right: 20px;
+						margin-right: 2rem;
+					}
+					#secondary-sidebar {
+						margin-left: 20px;
+						margin-left: 2rem;
+						}
+						.section-header,
+						.section-content,
+						.section-footer,
+						.sidebar {
+							margin: 0 0 16px;
+							margin: 0 0 1.6rem;
+							}
+							.posts-list,
+							.post-types-list {
+								list-style-type: none;
+								padding: 0;
+								}
+								.posts-list li.hentry,
+								.post-types-list li.hentry {
+									margin-bottom: 16px;
+									margin-bottom: 1.6rem;
+								}
+								.posts-list li.hentry:last-child,
+								.post-types-list li.hentry:last-child {
+									margin-bottom: 0;
+}
+
+
+/** =Bares lattérales
+ *************************************/
+ 
+.sidebar .widget {
+	margin: 0 0 16px;
+	margin: 0 0 1.6rem;
+}
+.sidebar .widget:last-child {
+	margin: 0;
+	}
+	.widget-title {
+		font-size: 14px;
+		font-size: 1.4rem;
+		line-height: 16px;
+		line-height: 1.6rem;
+		margin: 16px 0;
+		margin: 1.6rem 0;
+}
+
+
+/** =En-tête
+ *************************************/
+
+/** Menu déroulant de l'entête **/
+#header-menu-wrapper {
+	position: absolute;
+	bottom: 32px;
+	bottom: 3.2rem;
+	right: 20px;
+	right: 2rem;
+	}
+	#header-menu,
+	#header-menu * {
+		margin: 0;
+		}
+		#header-menu li {
+			position: relative;
+			background-color: #fff;
+			padding: 2px 5px;
+			padding: .2rem .5rem;
+		}
+		#header-menu > li {
+			float: left;
+			padding: 0 5px;
+			padding: 0 .5rem;
+			border-left: 1px solid #1a1a1a;
+		}
+		#header-menu > li:first-child {
+			border-left: none;
+			}
+			#header-menu a {
+				display: block;
+				position: relative
+			}
+			#header-menu li:hover > ul {
+				display: block;
+			}
+			#header-menu ul {
+				position: absolute;
+				display: none;
+				top: 100%;
+				left: 0;
+				z-index: 99;
+				}
+				#header-menu ul ul {
+					top: 0;
+					left: 100%;
+}
+
+/** Nom + description du site **/
+#site-branding {
+	float: left;
+	margin-top: 32px;
+	margin-top: 3.2rem;
+}
+
+/** Formulaire de recherche **/
+.widget_search{
+	position: absolute;
+	top: 32px;
+	top: 3.2rem;
+	right: 20px;
+	right: 2rem;
+}
+
+
+/** =Navigations
+ *************************************/
+
+ /* Pagination pour les pages qui utilisent le marqueur <!--nextpage--> */
+.pagination{
+	margin-top: 16px;
+	text-align: center;
+	}
+	.pagination .label{
+		display: none;
+		}
+		/* Page courrante */
+		.pagination .page-number{
+			margin: 0 3px;
+			font-weight: bold;
+		}
+		/* Autres pages (elles ont un lien pour s'y rendre !) */
+		.pagination a .page-number{
+			font-weight: normal;
+}
+
+ /* Navigation suivant/précédent */
+
+/* Navigation suivant/précédent */
+.previous-next-navigation {
+	margin: 16px 0;
+	}
+	.previous,
+	.next {
+		width: 45%;
+	}
+	.previous {
+		float: left;
+	}
+	.next {
+		float: right;
+		text-align:right;
+		}
+		.previous-next-navigation a,
+		.previous-next-navigation a:link,
+		.previous-next-navigation a:active,
+		.previous-next-navigation a:visited {}
+		.previous-next-navigation a:focus,
+		.previous-next-navigation a:hover {
+			}
+			.previous-next-navigation .meta-nav {}
+			.previous a:before {}
+			.next a:after {
+}
+
+
+/** =Styles WordPress
+ *************************************/
+
+.alignright,
+img.alignright {
+	float: right;
+	display: inline;
+	margin: 8px 0 8px 16px;
+	margin: .8rem 0 .8rem 1.6rem;
+}
+.alignleft,
+img.alignleft {
+	float: left;
+	display: inline;
+	margin: 8px 16px 8px 0;
+	margin: .8rem 1.6rem .8rem 0;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin: 8px auto;
+	margin: .8rem auto;
+}
+.alignnone,
+img.alignnone {
+	margin: 8px 16px;
+	margin: .8rem 1.6rem;
+}
+
+
+
+/** =Articles / Pages
+ *************************************/
+
+.entry-title {
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 16px;
+	line-height: 1.6rem;
+ }
+.section-title {
+	font-size: 20px;
+	font-size: 2rem;
+	line-height: 32px;
+	line-height: 3.2rem;
+ }
+
+ 
+
+/** =Pied de page
+ *************************************/
+
+/** Menu du pied de page **/
+#footer-menu-wrapper {
+	position: absolute;
+	bottom: 8px;
+	bottom: .8rem;
+	left: 20px;
+	left: 2rem;
+	width: 940px;
+	width: 94rem;
+	}
+	#footer-menu {
+		line-height: 8px;
+		line-height: .8rem;
+		text-align: center;
+	}
+	#footer-menu,
+	#footer-menu * {
+		margin: 0;
+		}
+		#footer-menu li {
+			display: inline-block;
+			background-color: #fff;
+			padding: 0 5px;
+			padding: 0 .5rem;
+			border-left: 1px solid #1a1a1a;
+		}
+		#footer-menu li:first-child {
+			border-left: none;
+			}
+			#footer-menu a {
+				display: block;
+				line-height: 8px;
+				line-height: .8rem;
+				font-size: 8px;
+				font-size: .8rem;
+}
+
+
+
+/** =Modification de styles pour les
+ *   plugins recommandés
+ *************************************/
+
+
+/** Contact Form 7 **/
+
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+div.wpcf7-response-output {
+	margin: 32px 8px 16px;
+	margin: 3.2rem .8rem 1.6rem;
+	padding: 3px 8px;
+	padding: .3rem .8rem;
+}
+
+div.wpcf7-mail-sent-ok,
+div.wpcf7-mail-sent-ng,
+div.wpcf7-spam-blocked,
+div.wpcf7-validation-errors {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+	border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors {
+	border: 2px solid #f7e700;
+}
+
+span.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+	color: #f00;
+	display: block;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip { 
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #ff0000;
+	background: #fff;
+	padding: 3px 8px;
+	padding: .3rem .8rem;
+}
+
+span.wpcf7-list-item {
+	margin-left: 8px;
+	margin-left: .8rem;
+}
+
+.wpcf7-display-none {
+	display: none;
+}
+
+div.wpcf7 img.ajax-loader {
+	border: none;
+	vertical-align: middle;
+	margin-left: 4px;
+	margin-left: .4rem;
+}
+
+div.wpcf7 div.ajax-error {
+	display: none;
+}
+
+div.wpcf7 .placeheld {
+	color: #888;
+}
+
+
+
+
+.wpcf7-form {}
+.wpcf7-form fieldset p {}
+.wpcf7-form label {}
+.wpcf7-form input[type="text"],
+.wpcf7-form textarea {}
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"] {
+	width: 252px;
+	height: 14px;
+	line-height: 14px;
+	padding: 4px 3px;
+	border: 1px solid #ddd;
+	margin: 0 0 8px;
+}
+.wpcf7-form textarea {
+	width: 252px;
+	height: 150px;
+	line-height: 14px;
+	padding: 4px 3px;
+	border: 1px solid #ddd;
+	margin: 0;
+}
+.wpcf7-form fieldset.submit {}
+.wpcf7-form input[type="submit"] {
+	height: 22px;
+	line-height: 22px;
+	padding: 4px 3px;
+	border: 1px solid #ddd;
+	margin: 0 0 8px;
+}
+
+.wpcf7-display-none {}
+.wpcf7-response-output {}
+.wpcf7-mail-sent-ok {}
+.wpcf7-mail-sent-ng {}
+.wpcf7-spam-blocked {}
+.wpcf7-validation-errors {}
+.wpcf7 img.ajax-loader {}
+
+span.wpcf7-form-control-wrap {}
+span.wpcf7-not-valid-tip {}
+span.wpcf7-not-valid-tip-no-ajax {}
+
+
+
+
+
+/** =Media Queries
+ *************************************/
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
+ * See http://iamvdo.me/blog/utilisez-viewport-pour-le-responsive
+ */
+@-webkit-viewport {
+    width: device-width;
+}
+   @-moz-viewport {
+    width: device-width;
+}
+    @-ms-viewport {
+	width: device-width;
+}
+     @-o-viewport {
+    width: device-width;
+}
+        @viewport {
+	width: device-width;
+	zoom: 1; /* zoom initial à 1.0 (et clin d'oeil aux fans d'IE6/7) */
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au moins 1024px */
+@media screen and (min-width: 1024px) {}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait entre 700px et 1023px */
+@media screen and (min-width: 700px) and (max-width: 1023px) {}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 699px */
+@media screen and (max-width: 699px) {}

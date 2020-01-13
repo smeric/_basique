@@ -1,0 +1,46 @@
+/**
+ * Theme Name: _basique
+ * Theme URI: https://github.com/smeric/_basique
+ * Description: Le thème _basique (lire "très" basique) est un thème WordPress minimal utilisé comme support de cours. Il est destiné à l'apprentissage du processus de fabrication de thèmes pour WordPress. Il peut aussi servir comme thème de base (starter theme) ou thème parent pour la création de thèmes plus complexes.
+ * Version: 1.0.0
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Author: Sébastien Méric
+ * Author URI: http://www.sebastien-meric.com/
+ * Tags: tutorial, _basique, minimal, starter, parent
+ *
+ * @package WordPress
+ * @subpackage _basique
+ **/
+
+/**
+ * Copyright 2014 Sébastien Méric (email: sebastien.meric@gmail.com)
+ * 
+ * This subpackage is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ **/
+
+/**
+ * Ce fichier est présent pour des raisons duent à la structure même d'un thème WordPress. Il contient
+ * toutes les informations sur le thème dans son entête. Il n'est pas déstiné à recevoir des définitions
+ * de styles. Ce n'est pas à proprement parlé une "feuille de styles". Il n'est pas inclus dans l'entête
+ * des pages HTML qui composent le site web.
+ *
+ * Pour personnaliser les styles de ce thème, il faut modifier la feuille de styles suivante :
+ * assets/css/style.css
+ *
+ * Ce fichier n'est donc pas sensé être modifié et y ajouter des déclarations de styles n'aurait aucune
+ * influence sur le rendu final du site.
+ **/
+

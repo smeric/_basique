@@ -1,0 +1,22 @@
+/**
+ * Styles spécifiques à Internet Explorer jusqu'à la version 9 inclus
+ *
+ * Ces styles peuvent écraser les styles déclarés dans la feuille de styles principale : style.css
+ *
+ * @package WordPress
+ * @subpackage _basique
+ **/
+
+/**
+ * Clearfix
+ * The clearfix hack, or "easy-clearing" hack, is a method of clearing floats.
+ * To be used with .clearfix definition in main stylesheet
+ **/
+.clearfix{zoom:1}
+
+/**
+ * Better images resize in ie
+ **/
+img{-ms-interpolation-mode:bicubic}
+
+
