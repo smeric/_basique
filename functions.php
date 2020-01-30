@@ -117,7 +117,7 @@ if ( ! function_exists( '_basique_enqueue_jquery_scripts' ) ) :
 			// Versions disponibles :
 			//     https://cdnjs.com/libraries/jquery
 			//     https://developers.google.com/speed/libraries/#jquery
-			$wp_jquery_ver = apply_filters( '_basique_jquery_version', $GLOBALS['wp_scripts']->registered['jquery-core']->ver );
+			$wp_jquery_ver = apply_filters( '_basique_jquery_version', str_replace( '-wp', '', $GLOBALS['wp_scripts']->registered['jquery-core']->ver ) );
 			$wp_jquery_migrate_ver = apply_filters( '_basique_jquery_migrate_version', $GLOBALS['wp_scripts']->registered['jquery-migrate']->ver );
 
 			// Si vous souhaitez charger les librairies depuis cdnjs au lieu de Google :
@@ -186,14 +186,11 @@ if ( ! function_exists( '_basique_jquery_local_fallback' ) ) :
 			static $add_jquery_migrate_fallback = false;
 			static $add_jquery_ie_fallback      = false;
 
-			$wp_jquery_ver = apply_filters( '_basique_jquery_version', $GLOBALS['wp_scripts']->registered['jquery-core']->ver );
-			$jquery_ie = version_compare( $wp_jquery_ver, '1.11.2' );
-
 			if ( $add_jquery_fallback ){
-				echo ( $jquery_ie ? '<!--[if gte IE 9]><!-->' . PHP_EOL : '' ), '<script>window.jQuery || document.write(\'<script src="', includes_url( 'js/jquery/jquery.js' ), '"><\/script>\')</script>', ( $jquery_ie ? PHP_EOL . '<!--<![endif]-->' : '' ), PHP_EOL;
+				echo '<!--[if gte IE 9]><!-->', PHP_EOL, '<script>window.jQuery || document.write(\'<script src="', includes_url( 'js/jquery/jquery.js' ), '"><\/script>\')</script>', PHP_EOL, '<!--<![endif]-->', PHP_EOL;
 				$add_jquery_fallback = false;
 			}
-			elseif ( $add_jquery_ie_fallback && $jquery_ie ) {
+			elseif ( $add_jquery_ie_fallback ) {
 				echo '<!--[if lt IE 9]>', PHP_EOL, '<script>window.jQuery || document.write(\'<script src="', trailingslashit( get_stylesheet_directory_uri() ), 'assets/js/jquery-1.11.2.min.js"><\/script>\')</script>', PHP_EOL, '<![endif]-->', PHP_EOL;
 				$add_jquery_ie_fallback = false;
 			}
@@ -1435,5 +1432,3 @@ if ( ! function_exists( '_basique_charge_serveur' ) ) :
         delete_transient( $transient_key );
     }
 endif;
-
-?>
