@@ -1,7 +1,7 @@
 <?php /* force UTF-8 : éàè */
 header( 'header-type: text/html; charset=UTF-8' );
 /**
- * Template Name: En construction...
+ * Template Name: Maintenance mode...
  *
  * @package WordPress
  * @subpackage _basique

@@ -454,7 +454,7 @@ if ( ! function_exists( '_basique_register_sidebars' ) ) :
 			'after_title'	=> '</h4>'
 		));
 		register_sidebar(array(
-			'name'			=> __( 'Seconary', '_basique' ),
+			'name'			=> __( 'Secondary', '_basique' ),
 			'id'			=> 'secondary',
 			'description'	=> __( 'The secondary sidebar.', '_basique' ),
 			'before_widget'	=> '<div id="%1$s" class="widget %2$s">'.PHP_EOL,

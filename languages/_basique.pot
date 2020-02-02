@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: _basique v0.1.0\n"
 "Report-Msgid-Bugs-To:  Sébastien Méric <sebastien.meric@gmail.com>\n"
 "POT-Creation-Date: 2014-04-09 20:22+0100\n"
-"PO-Revision-Date: \n"
+"PO-Revision-Date: 2020-01-31 13:24+0100\n"
 "Last-Translator: Sébastien Méric <sebastien.meric@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -24,5 +24,366 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
+#: functions.php:1284 functions.php:1312
+msgid "-----"
+msgstr ""
 
+#: functions.php:922 partials/navigations/list.php:7
+msgid "<span class=\"meta-nav\">&laquo;</span> Previous"
+msgstr ""
 
+#: partials/loops/single-home-page.php:21 partials/loops/single-page.php:24
+#: partials/loops/single.php:24
+msgid "<span class=\"meta-nav\">&laquo;</span> Previous page"
+msgstr ""
+
+#: partials/navigations/list.php:11
+msgid "<span class=\"meta-nav\">&laquo;</span> Previous results"
+msgstr ""
+
+#. Name of the theme
+msgid "_basique"
+msgstr ""
+
+#: partials/sidebars/footer.php:18
+msgid "Add some widgets to the footer."
+msgstr ""
+
+#: partials/sidebars/header.php:18
+msgid "Add some widgets to the header."
+msgstr ""
+
+#: partials/sidebars/primary.php:20
+msgid "Add some widgets to the primary sidebar."
+msgstr ""
+
+#: partials/sidebars/secondary.php:20
+msgid "Add some widgets to the secondary sidebar."
+msgstr ""
+
+#: functions.php:772
+msgid "Archives"
+msgstr ""
+
+#: functions.php:990
+msgid ""
+"Check if you don't want this page's title to be displayed on top of this "
+"website page."
+msgstr ""
+
+#: header.php:26
+#, php-format
+msgid "Copyright © %1s %2s. All Rights Reserved."
+msgstr ""
+
+#: functions.php:1283 functions.php:1311
+msgid "Debug"
+msgstr ""
+
+#: functions.php:1227
+msgid ""
+"Debug mode is active. Please considere to desactivate it in wp-config.php "
+"before the site access becomes public."
+msgstr ""
+
+#: functions.php:972
+msgid "Do not display page title"
+msgstr ""
+
+#. Name of the template
+msgid "Maintenance mode..."
+msgstr "En construction..."
+
+#: functions.php:321
+msgid "Entering debug mode..."
+msgstr ""
+
+#. Name of the template
+msgid "Extrait des pages enfants"
+msgstr ""
+
+#: functions.php:466
+msgid "Footer"
+msgstr ""
+
+#: functions.php:86
+msgid "Footer menu"
+msgstr ""
+
+#: functions.php:439
+msgid "Header"
+msgstr ""
+
+#: functions.php:85
+msgid "Header menu"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.sebastien-meric.com/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://github.com/smeric/_basique"
+msgstr ""
+
+#: functions.php:324
+msgid ""
+"If someone told you to type or paste something into this area it could "
+"compromise the security of your personal informations. Do not do it unless "
+"you know exactly what you are doing !"
+msgstr ""
+
+#: functions.php:1313 functions.php:1316
+msgid "Included template part : "
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Le thème _basique (lire \"très\" basique) est un thème WordPress minimal "
+"utilisé comme support de cours. Il est destiné à l'apprentissage du "
+"processus de fabrication de thèmes pour WordPress. Il peut aussi servir "
+"comme thème de base (starter theme) ou thème parent pour la création de "
+"thèmes plus complexes."
+msgstr ""
+
+#: functions.php:1137
+#, php-format
+msgid "link to : %s"
+msgstr ""
+
+#. Name of the template
+msgid "Liste des actualités"
+msgstr ""
+
+#: functions.php:1288
+msgid "Loaded template : "
+msgstr ""
+
+#: index.php:10 page-templates/full-page.php:12 page-templates/home-page.php:12
+#: page-templates/news.php:12 page-templates/primary-sidebar-page.php:12
+#: page-templates/with-subpages-content.php:11
+msgid "Main page content"
+msgstr ""
+
+#: functions.php:1287
+msgid "Matched rewrite query : "
+msgstr ""
+
+#: functions.php:1286
+msgid "Matched rewrite rule : "
+msgstr ""
+
+#: partials/sidebars/header.php:41
+msgid "Menu"
+msgstr ""
+
+#: functions.php:325
+msgid "More information : https://en.wikipedia.org/wiki/Self-XSS"
+msgstr ""
+
+#: functions.php:1373
+#, php-format
+msgid "MySQL stats : %s."
+msgstr ""
+
+#: functions.php:1383
+#, php-format
+msgid "MySQL version : %s."
+msgstr ""
+
+#: functions.php:931 partials/navigations/list.php:8
+msgid "Next <span class=\"meta-nav\">&raquo;</span>"
+msgstr ""
+
+#: partials/loops/single-home-page.php:20 partials/loops/single-page.php:23
+#: partials/loops/single.php:23
+msgid "Next page <span class=\"meta-nav\">&raquo;</span>"
+msgstr ""
+
+#: partials/navigations/list.php:12
+msgid "Next results <span class=\"meta-nav\">&raquo;</span>"
+msgstr ""
+
+#: functions.php:753
+#, php-format
+msgid "No result found for <em>&ldquo;%s&rdquo;</em>"
+msgstr ""
+
+#: page-templates/with-subpages-content.php:70
+msgid "No subpages to display."
+msgstr ""
+
+#: functions.php:1285 functions.php:1286 functions.php:1287
+msgid "None"
+msgstr ""
+
+#: functions.php:785 page-templates/with-subpages-content.php:68
+#: partials/loop-list.php:53 partials/loop-paginated-list.php:53
+#: partials/loops/list-news.php:47 partials/loops/list.php:32
+msgid "Not Found"
+msgstr ""
+
+#: partials/loops/list-search-results.php:32
+msgid "Nothing was found corresponding your search query."
+msgstr ""
+
+#: functions.php:1372
+#, php-format
+msgid "Number of database queries : %s."
+msgstr ""
+
+#: searchform.php:15
+msgid "OK"
+msgstr ""
+
+#: functions.php:756
+#, php-format
+msgid "One result for <em>&ldquo;%2$s&rdquo;</em>"
+msgid_plural "%1$s results for <em>&ldquo;%2$s&rdquo;</em>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:518
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:955
+#, php-format
+msgid "Page %s of %s"
+msgstr ""
+
+#. Name of the template
+msgid "Page avec une seule sidebar"
+msgstr ""
+
+#. Name of the template
+msgid "Page d'accueil sans sidebar"
+msgstr ""
+
+#: functions.php:1346
+#, php-format
+msgid "Page generated by WordPress %1$s in %2$s seconds."
+msgstr ""
+
+#: functions.php:1345
+msgid "Page infos :"
+msgstr ""
+
+#. Name of the template
+msgid "Page sans sidebar"
+msgstr ""
+
+#: partials/loops/single-home-page.php:16 partials/loops/single-page.php:19
+#: partials/loops/single.php:19
+msgid "Pages : "
+msgstr ""
+
+#: functions.php:1384
+#, php-format
+msgid "PHP Version : %s"
+msgstr ""
+
+#: partials/navigations/list.php:20
+msgid "Previous and next entries"
+msgstr ""
+
+#: functions.php:448
+msgid "Primary"
+msgstr ""
+
+#: functions.php:553
+msgid "Primary navigation"
+msgstr ""
+
+#: page-templates/with-subpages-content.php:57 partials/loop-list.php:42
+#: partials/loop-paginated-list.php:42 partials/loops/list-news.php:36
+#: partials/loops/list-search-results.php:22 partials/loops/list.php:21
+msgid "Read more <span class=\"meta-nav\">&raquo;</span>"
+msgstr ""
+
+#. Name of the template
+msgid "Redirige vers la 1ère page enfant"
+msgstr ""
+
+#: functions.php:1285
+msgid "Requested page : "
+msgstr ""
+
+#: functions.php:1371
+#, php-format
+msgid "Resources : %1$s%% PHP & %2$s%% MySQL."
+msgstr ""
+
+#: searchform.php:12
+msgid "Search for : "
+msgstr ""
+
+#: searchform.php:10
+msgid "Search form"
+msgstr ""
+
+#: searchform.php:14
+msgid "Search..."
+msgstr ""
+
+#: functions.php:457
+msgid "Secondary"
+msgstr ""
+
+#: functions.php:556
+msgid "Secondary navigation"
+msgstr ""
+
+#: functions.php:1401
+#, php-format
+msgid "Server free space : %s bytes = %1.2f %s"
+msgstr ""
+
+#: functions.php:1382
+msgid "Server infos :"
+msgstr ""
+
+#: partials/loop-list.php:55 partials/loop-paginated-list.php:55
+#: partials/loops/list-news.php:49 partials/loops/list.php:34
+#: partials/loops/not-found.php:13
+msgid "Sorry, but you are looking for something that isn&#8217;t here."
+msgstr ""
+
+#. Author of the theme
+msgid "Sébastien Méric"
+msgstr ""
+
+#: page-templates/first-child-redirect.php:18
+msgid ""
+"The \"Redirect To First Child\" page template must be associated with the "
+"parent page of a pages hierarchical tree."
+msgstr ""
+
+#: functions.php:468
+msgid "The footer widget area."
+msgstr ""
+
+#: functions.php:441
+msgid "The header widget area."
+msgstr ""
+
+#: functions.php:450
+msgid "The primary sidebar."
+msgstr ""
+
+#: functions.php:459
+msgid "The secondary sidebar."
+msgstr ""
+
+#: functions.php:322
+msgid "Viewport size : "
+msgstr ""
+
+#: functions.php:323
+msgid "Wait! This area is meant for developers!"
+msgstr ""
+
+#: functions.php:1394
+msgid "Warning : server free space could not be calculated..."
+msgstr ""
